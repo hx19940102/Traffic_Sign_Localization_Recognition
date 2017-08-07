@@ -4,6 +4,8 @@ This project mainly contains two different parts:
 1. Locate/Detect the traffic signs in the image.
 2. Recognize/Classify the traffic signs detected by part 1.
 
+It is implemented with Python 2.7.0/Opencv 3.1.0/Tensorflow 0.12
+
 For part one, I mainly use lbp cascade classifier for detect traffic signs in an image. It is similar to face detection, you only need to train the cascade classifier for detecting traffic signs. The information about cascade classifier training and detection could be found from opencv document:http://docs.opencv.org/3.0-beta/doc/user_guide/ug_traincascade.html
 
 The cascade classifier could return multiple detection results from one image.
