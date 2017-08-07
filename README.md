@@ -10,7 +10,9 @@ For part one, I mainly use lbp cascade classifier for detect traffic signs in an
 
 The cascade classifier could return multiple detection results from one image.
 
-For part two, I take use of the Lenet model and change the structure a little bit, input image size now should be 64/*64 instead of 32/*32 and I add one more CONV layer with Max_Pool layer. I collect data for 5 different types of traffic signs:
+For part two, I take use of the Lenet model and change the structure a little bit, input image size now should be 64×64 instead of 32×32 and I add one more CONV layer with Max_Pool layer. The output of the network is [batch_size × num_classes], the loss of the training used is cross_entropy loss and the training rate is set as 0.001. I trained the network for 1000 rounds with batch_size = 256.
+
+I collect training data for 5 different types of traffic signs:
 ![alt text](https://github.com/hx19940102/Traffic_Sign_Localization_Recognition/blob/master/image/001_5.jpg)
 ![alt text](https://github.com/hx19940102/Traffic_Sign_Localization_Recognition/blob/master/image/002_25.jpg)
 ![alt text](https://github.com/hx19940102/Traffic_Sign_Localization_Recognition/blob/master/image/003_35.jpg)
