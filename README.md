@@ -11,17 +11,17 @@ For part one, I mainly use lbp cascade classifier for detect traffic signs in an
 The cascade classifier could return multiple detection results from one image.
 
 For part two, I take use of the Lenet model and change the structure a little bit, input image size now should be 64*64 instead of 32*32 and I add one more CONV layer with Max_Pool layer. I collect data for 5 different types of traffic signs:
-![alt text](https://github.com/hx19940102/Traffic_Sign_Localization_Recognition/blob/master/001_5.jpg)
-![alt text](https://github.com/hx19940102/Traffic_Sign_Localization_Recognition/blob/master/002_25.jpg)
-![alt text](https://github.com/hx19940102/Traffic_Sign_Localization_Recognition/blob/master/003_35.jpg)
-![alt text](https://github.com/hx19940102/Traffic_Sign_Localization_Recognition/blob/master/004_13.jpg)
-![alt text](https://github.com/hx19940102/Traffic_Sign_Localization_Recognition/blob/master/005_1.jpg)
+![alt text](https://github.com/hx19940102/Traffic_Sign_Localization_Recognition/blob/master/image/001_5.jpg)
+![alt text](https://github.com/hx19940102/Traffic_Sign_Localization_Recognition/blob/master/image/002_25.jpg)
+![alt text](https://github.com/hx19940102/Traffic_Sign_Localization_Recognition/blob/master/image/003_35.jpg)
+![alt text](https://github.com/hx19940102/Traffic_Sign_Localization_Recognition/blob/master/image/004_13.jpg)
+![alt text](https://github.com/hx19940102/Traffic_Sign_Localization_Recognition/blob/master/image/005_1.jpg)
 
 I also augment the data with rotations and gaussian blur.
 Training of the network is fast and easy, the accuracy on the training dataset could reach more than 98%.
 
 I combine both part 1 and part 2 together and test with the camera input. The result seems great:
-![alt text](https://github.com/hx19940102/Traffic_Sign_Localization_Recognition/blob/master/result1.png)
-![alt text](https://github.com/hx19940102/Traffic_Sign_Localization_Recognition/blob/master/result2.png)
-![alt text](https://github.com/hx19940102/Traffic_Sign_Localization_Recognition/blob/master/result3.png)
-![alt text](https://github.com/hx19940102/Traffic_Sign_Localization_Recognition/blob/master/result4.png)
+![alt text](https://github.com/hx19940102/Traffic_Sign_Localization_Recognition/blob/master/image/result1.png)
+![alt text](https://github.com/hx19940102/Traffic_Sign_Localization_Recognition/blob/master/image/result2.png)
+![alt text](https://github.com/hx19940102/Traffic_Sign_Localization_Recognition/blob/master/image/result3.png)
+![alt text](https://github.com/hx19940102/Traffic_Sign_Localization_Recognition/blob/master/image/result4.png)
